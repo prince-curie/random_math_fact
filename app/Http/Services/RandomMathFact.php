@@ -87,7 +87,7 @@ class RandomMathFact
     {
         $this->checkThatNumberPropertyIsNotNull();
 
-        return (string) Http::numbersApi()->get("{$this->number}/math");
+        return (string) Http::get("http://numbersapi.com/{$this->number}/math");
     }
 
     public function getProperties(): array
