@@ -6,7 +6,6 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class RandomMathFactRequest extends FormRequest
 {
-    private int $maxNumber = PHP_INT_MAX;
     /**
      * Determine if the user is authorized to make this request.
      */
@@ -23,7 +22,7 @@ class RandomMathFactRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'number' => ['required','integer', 'min:0', 'max:'. PHP_INT_MAX],
+            'number' => ['required','integer', 'min:'. PHP_INT_MIN, 'max:'. PHP_INT_MAX],
         ];
     }
 

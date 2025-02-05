@@ -113,7 +113,7 @@ class RandomMathFact
             return 1;
         }
 
-        return floor(log10($this->number)) + 1;
+        return floor(log10(abs($this->number))) + 1;
     }
 
     private function numberParity(): string
