@@ -18,7 +18,7 @@ class RandomMathFact
     {
         $this->checkThatNumberPropertyIsNotNull();
 
-        $number = $this->number;
+        $number = abs($this->number);
         $sum = 0;
 
         do {
