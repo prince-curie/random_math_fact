@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'numbers_api'=> [
+        'base_url' => env('NUMBERS_API_BASE_URL')
+    ],
 ];
